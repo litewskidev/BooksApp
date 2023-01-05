@@ -137,5 +137,5 @@
     }
   }
 
-  const app = new BookList();
+  new BookList();
 }
