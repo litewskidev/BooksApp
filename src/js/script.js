@@ -81,7 +81,7 @@
         const clickedFilter = event.target;
         //console.log(clickedFilter);
 
-        if (clickedFilter === event.target) {
+        if (clickedFilter.tagName == 'INPUT' && clickedFilter.type == 'checkbox' && clickedFilter.name == 'filter') {
           if (clickedFilter.checked) {
             arrays.filters.push(clickedFilter.value);
           } else {
